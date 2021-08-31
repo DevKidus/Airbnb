@@ -1,10 +1,8 @@
+import Header from "./Components/Header";
+import Hero from "./Components/Hero";
+
 function App() {
-  return (
-    <div>
-      <input type="text" />
-      <h1 className="text-red-600">HEader</h1>
-    </div>
-  );
+  return <div className="font-Nunito"></div>;
 }
 
 export default App;
