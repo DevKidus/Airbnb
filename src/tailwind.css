@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+/* Loading Animation start */
+
+.loader {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.circular-loader {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.loader-path {
+  stroke-dasharray: 150, 200;
+  stroke-dashoffset: -10;
+  -webkit-animation: dash 1.5s ease-in-out infinite,
+    color 6s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124;
+  }
+}
+@-webkit-keyframes color {
+  0% {
+    stroke: #70c542;
+  }
+  40% {
+    stroke: #70c542;
+  }
+  66% {
+    stroke: #70c542;
+  }
+  80%,
+  90% {
+    stroke: #70c542;
+  }
+}
+@keyframes color {
+  0% {
+    stroke: #70c542;
+  }
+  40% {
+    stroke: #70c542;
+  }
+  66% {
+    stroke: #70c542;
+  }
+  80%,
+  90% {
+    stroke: #70c542;
+  }
+}
+
+/* Loading Animation end */
+
+/* Hide scroll of live anywhere start */
+.hide-scroll::-webkit-scrollbar {
+  height: 0;
+}
+.show-scroll::-webkit-scrollbar {
+  height: 30px;
+}
+/* Hide scroll of live anywhere end */
+
+/* Footer start */
+.heading {
+  font-weight: 500;
+}
+.list p {
+  width: 250px;
+}
+/* Footer End */
+
+/* Search start */
+
+.option {
+  @apply cursor-pointer px-4 py-2 whitespace-nowrap  border rounded-full hover:shadow-md active:scale-95 transition-all duration-200 grid font-semibold place-items-center text-sm;
+}
+.max-w-screen {
+  width: 100%;
+}
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+/* Search end */

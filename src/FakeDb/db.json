@@ -1,0 +1,24 @@
+{
+  "footer": [
+    {
+      "id": 1,
+      "src": "./Assets/img-1.webp",
+      "text": "Outdoor gateways"
+    },
+    {
+      "id": 2,
+      "src": "./Assets/img-2.webp",
+      "text": "Outdoor gateways"
+    },
+    {
+      "id": 3,
+      "src": "./Assets/img-3.webp",
+      "text": "Outdoor gateways"
+    },
+    {
+      "id": 4,
+      "src": "./Assets/img-4.webp",
+      "text": "Outdoor gateways"
+    }
+  ]
+}
